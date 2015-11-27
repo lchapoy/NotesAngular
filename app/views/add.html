@@ -1,0 +1,20 @@
+<div class="container framer">
+	<div class="addFrame" add&cancel >
+
+		<div class="form-group">
+			<label for="usr">Title:</label>
+			<input type="text" class="form-control" id="title" ng-model='current.title'>
+			<label for="comment">Text:</label>
+			<textarea class="form-control" rows="5" id="comment" ng-model='current.content'></textarea>
+			<br>
+			<span  ng-if="current.date" class="cDate"> <strong>Created:</strong> {{current.date}}  </span>
+			<br>
+			<span  ng-if="current.edit" class="eDate"> <strong> Edited:</strong> {{current.edit}}</span>
+			<button type="button" class="btn btn-primary" style="float:right" > <span ng-if="current._id">Edit</span> <span ng-if="!current._id">Save</span></button>
+			<button type="button" class="btn btn-danger" style="float:right" > Cancel </button>
+			<br>
+		</div>
+
+	</div>
+	
+</div>

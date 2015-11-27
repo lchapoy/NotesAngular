@@ -1,0 +1,11 @@
+<ul>
+	<li class="notes" ng-repeat="item in source">
+		<div class="nHeader">
+			<button class=" glyphicon glyphicon-pencil" name="edit" info="{{item._id.$oid}}"></button>
+			<button class=" glyphicon glyphicon-remove" name="delete" info="{{item._id.$oid}}"></button>
+		</div>
+		<h2>{{item.title}}</h2>
+		<p>{{item.content}}</p>
+
+	</li>
+</ul>
